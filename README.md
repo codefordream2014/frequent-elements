@@ -14,9 +14,15 @@ Usage:
 
 Object[] charsArray = {'0', '1', '1', '0', '2', '0', '0', '1', '5', '6', '9', '8'};
 
+//specify the k
+
 int k = 3;
 
+//Get the result
+
 Object[] resultArray = ArrayHelper.getMostFrequentElementsOfK(charsArray, k);
+
+//Print the result array
 
 System.out.println(Arrays.toString(resultArray));
 
