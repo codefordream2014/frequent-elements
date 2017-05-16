@@ -23,8 +23,8 @@ public class ArrayHelper {
      * 3.Sort the ArrayList with Collections.sort
      * 4.Return the top rank of K in the ArrayList
      *
-     * @param obj the source object array that need to be handled
-     * @param k   number of most frequent elements
+     * @param obj the source object array that need to be handled,return the null array if the array is null
+     * @param k   number of most frequent elements,k must be greater than 1(K>=1)
      * @return the object array that most frequently appears in the source array for specified k number
      */
     public static Object[] getMostFrequentElementsOfK(final Object[] obj, Integer k) {
@@ -32,6 +32,11 @@ public class ArrayHelper {
         if (null == obj || obj.length <= 0) {
             return obj;
         }
+
+        if (k <= 0) {
+            throw new RuntimeException("k must be greater than 1.");
+        }
+
         Map<Object, Integer> resultMap = new LinkedHashMap<>();
         //1. Time complexity is O(n)
         for (Object o : obj) {
