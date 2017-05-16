@@ -11,9 +11,14 @@ If the array is empty , return the empty array.
 Usage:
 
 //Initialize the given array
+
 Object[] charsArray = {'0', '1', '1', '0', '2', '0', '0', '1', '5', '6', '9', '8'};
+
 int k = 3;
+
 ArrayHelper.getMostFrequentElementsOfK(charsArray, k);
 
+
 Note:
+
 Please refer to the unit test for more detail usage.
