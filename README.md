@@ -1,4 +1,4 @@
-# frequent-elements
+# most frequent-elements in a given array
 
 Given a array of char, return the k most frequent elements
 
@@ -16,7 +16,9 @@ Object[] charsArray = {'0', '1', '1', '0', '2', '0', '0', '1', '5', '6', '9', '8
 
 int k = 3;
 
-ArrayHelper.getMostFrequentElementsOfK(charsArray, k);
+Object[] resultArray = ArrayHelper.getMostFrequentElementsOfK(charsArray, k);
+
+System.out.println(Arrays.toString(resultArray));
 
 
 Note:
