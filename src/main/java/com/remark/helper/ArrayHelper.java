@@ -32,6 +32,7 @@ public class ArrayHelper {
             return obj;
         }
         Map<Object, Integer> resultMap = new LinkedHashMap<>();
+        //1. time complexity is O(n)
         for (Object o : obj) {
             // the element has been put into the map yet
             if (resultMap.containsKey(o)) {
@@ -46,6 +47,7 @@ public class ArrayHelper {
         // convert map.entrySet() to entryList
         List<Map.Entry<Object, Integer>> entryList = new ArrayList<>(resultMap.entrySet());
 
+        //2. time complexity is O(nlgn)
         // sort the entryList
         Collections.sort(entryList, new Comparator<Map.Entry<Object, Integer>>() {
             @Override
@@ -60,7 +62,7 @@ public class ArrayHelper {
         }
 
         Object[] result = new Object[k];
-
+        //3. time complexity is O(n)
         for (int i = 0; i < k; i++) {
             result[i] = entryList.get(i).getKey();
         }
