@@ -26,15 +26,12 @@ public class ArrayHelper {
      * @param k   number of most frequent elements
      * @return the object array that most frequently appears in the source array for specified k number
      */
-
     public static Object[] getMostFrequentElementsOfK(final Object[] obj, Integer k) {
 
         if (null == obj || obj.length <= 0) {
             return obj;
         }
-        final int mapSize = obj.length + 1;
-        //prevent to resize
-        Map<Object, Integer> resultMap = new HashMap<>(mapSize, 1);
+        Map<Object, Integer> resultMap = new LinkedHashMap<>();
         for (Object o : obj) {
             // the element has been put into the map yet
             if (resultMap.containsKey(o)) {
