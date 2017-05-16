@@ -14,12 +14,13 @@ public class ArrayHelper {
     }
 
     /**
-     * find the k most frequent elements in one specified object array
-     * the step is as following:
+     * Find the k most frequent elements in one specified object array
+     * Time complexity is better than O(nlogn)
+     * The step is as following:
      * 1.Loop the obj array, count each element
      * and put the count in HashMap(key is the element,value is the number of times)
      * 2.Convert the HashMap to ArrayList
-     * 3.Sort the ArrayList
+     * 3.Sort the ArrayList with Collections.sort
      * 4.Return the top rank of K in the ArrayList
      *
      * @param obj the source object array that need to be handled
