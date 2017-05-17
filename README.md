@@ -8,6 +8,7 @@ Given ['1','1','1','2','2','3'] and k = 2, return ['1','2'].
 
 If the array is empty , return the empty array.
 
+
 Usage:
 
 //Initialize the given array
@@ -30,6 +31,7 @@ System.out.println(Arrays.toString(resultArray));
 Note:
 
 Please refer to the unit test for more detail usage.
+
 
 
 The implmentation step is as following:
