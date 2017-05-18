@@ -3,9 +3,6 @@ package com.remark.helper;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
-import java.util.Objects;
-
 /**
  * Created by zhangzhaoyang on 2017/5/16.
  */
