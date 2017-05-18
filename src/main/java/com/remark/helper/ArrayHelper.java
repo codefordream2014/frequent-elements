@@ -33,7 +33,7 @@ public class ArrayHelper {
             return obj;                                                                             //执行1次或者0次
         }                                                                                           //if语句执行最多3次，属于常数级T(n)=O(1)
 
-        if (k <= 0) {//执行1次
+        if (k <= 0) {                                                                               //执行1次
             throw new RuntimeException("k must be greater than 1.");                                //执行1次或者0次
         }                                                                                           //if语句执行最多2次T(n)=O(1)
 
